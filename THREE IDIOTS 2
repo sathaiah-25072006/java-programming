@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int c1 =obj.nextInt();
+        int d1 =obj.nextInt();
+        int c2 =obj.nextInt();
+        int d2 =obj.nextInt();
+        double midc =(c1 + c2)/2.0;
+        double midd =(d1 + d2)/2.0;
+
+        System.out.printf("Binoy's house is located at (%.1f,%.1f)",midc,midd);
+    }
+}
