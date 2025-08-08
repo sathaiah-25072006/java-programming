@@ -13,17 +13,17 @@ public class Solution {
         float sum = 0;
         if ((input1 >= 1 && input1 <= 20) && (input2 >= 1 && input2 <= 20))
         {
-            int first = 0;
-            int second = 1;
+            int f = 0;
+            int s = 1;
             for (int i = 1; i <= input2; i++) 
             {        
                 if (i >= input1) 
                 {
-                    sum = sum + first;
+                    sum = sum + f;
                 }
-                int next = first + second;
-                first = second;
-                second = next;
+                int next = f + s;
+                f = s;
+                s = next;
             }
             System.out.printf("The Sum of Fibonacci value is %.1f " ,sum );
         } 
@@ -33,3 +33,5 @@ public class Solution {
         }
     }
 }
+
+    
