@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int a = obj.nextInt();
+        char c;
+        for (int i = 1; i <= a; i++) {
+            for (int j = 1; j <= a - i; j++) {
+                System.out.print(" ");
+            }
+            c = 'A';
+            for (int k = 1; k <= i; k++) {
+                System.out.print(c + " ");
+                c++;
+            }
+            System.out.println();
+        }
+        for (int i = a - 1; i >= 1; i--) {
+            for (int j = 1; j <= a - i; j++) {
+                System.out.print(" ");
+            }
+            c = 'A';
+            for (int k = 1; k <= i; k++) {
+                System.out.print(c + " ");
+                c++;
+            }
+            System.out.println();
+        }
+    }
+}
+    
