@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int a = obj.nextInt(); 
+        int[] arr = new int[a];
+        for (int i = 0; i < a; i++) {
+            arr[i] = obj.nextInt();
+        }
+        int distCount = 0;
+        for (int i = 0; i < a; i++) {
+            int j;
+            for (j = 0; j < i; j++) {
+                if (arr[i] == arr[j]) {
+                    break;
+                }
+            }
+            if (j == i) { 
+                distCount++;
+            }
+        }
+        if (distCount == 1) {
+            System.out.println("There are " + distCount + " distinct element in the array.");
+        } else {
+            System.out.println("There are " + distCount + " distinct elements in the array.");
+        }
+    }
+} 
+    
